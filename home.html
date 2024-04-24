@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Door</title>
+    <!-- <link rel="logo icon" href="../images/logo/logo.png"> -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="fav icon" href="./images/logo/cheap.png">
+
+</head>
+<body>
+    <header>
+        <img src="./images/logo/cheap.png">
+        <span id="head">Next Door </span>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Sevices</a>
+
+    <span> One man’s garbage is another man’s treasure trove!</span>
+    </nav>
+    
+    <main>
+        <div class="container">
+        
+           
+
+            <div class="split middle">
+                <div id="product_list">
+
+              <!-- product list here -->
+
+                </div>
+            </div>
+
+            <div class="split right">
+                
+            <div id="cart">
+                <p id="cart_name">CART</p>
+                <p class="empty" id="empty">YOUR CART IS EMPTY</p>
+
+                <div id="cart_items">
+
+                    <!-- Cart item lists here -->
+
+
+                </div>
+                <button id="checkout_button" class="checkout_button" onclick="checkOut()">CHECK OUT</button>
+
+
+                <div class="checkout_models">
+                    <div id="myModal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal_content" id="modal_content">
+                            <span class="close">&times;</span>
+                            <div class="cust_content" id="m_content">
+                        
+                                <form  id="garageSaleForm">
+                                    <fieldset>
+                                      <legend>Customer Form</legend>
+                                      <p id="p_name">
+                                        <label for="name">Customer Name :</label>
+                                        <input type="text" aria-describedby="required-description"  name="name" id="name" required placeholder="Customer Name" />
+                                      </p>
+                                      <p id="p_email">
+                                        <label for="email">Email Id :</label>
+                                        <input type="text" aria-describedby="required-description"  name="email" id="email" required placeholder="Email Id" />
+                                    </p>
+
+                                      <p id="p_credit">
+                                        <label for="creditCard">Credit Card Number :</label>
+                                        <input type="text" name="creditCard" id="creditCard" placeholder="Credit Card Number" />
+                                      </p>
+                                      <p id="p_month">
+                                        <label for="creditCardMonth">Credit Card Expiry Month:</label>
+                                        <input type="text" id="creditCardMonth" placeholder="Credit Card Expiry Month" name="creditCardMonth">
+                                     </p>
+                                    <p id="p_year">
+                                        <label for="creditCardYear">Credit Card Expiry Year:</label>
+                                        <input type="text" id="creditCardYear" placeholder="Credit Card Expiry Year" name="creditCardYear">
+                                        <br>
+                                      </p>
+
+                                      <div class="cust_foot" id="modal_footer">
+                                        <button class="proceed" type="button" onclick="validateFrom()">Generate Receipt</button>
+                                        <button type="button" class="cancel">Cancel</button>
+                                    </div>
+                                    </fieldset>
+                                  </form>
+
+                             </div>
+                             <aside>
+                                <div class="receipt_content" id="receipt_content">
+                                   <h2>Receipt</h2>
+                                   <div class="cust_details" id="cust_details"></div>
+                                      
+                                   </div>
+                                   <div class="prod_details" id="prod_details"></div>
+                                      
+                                   </div>
+                             </aside>
+                 
+                             <!-- <div class="modal_footer" id="modal_footer">
+                                <button class="proceed" >Proceed</button>
+                                <button class="cancel">Cancel</button>
+                            </div> -->
+
+                        </div>
+
+                       
+
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </div>
+
+    </main>
+    <script  src="./script/script.js"></script>
+</body>
+</html>
